@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --darkBlue: #020f21;
+  --neonGreen: #e9fe75;
+  --green: #4ca39c;
+  --red: #c2586e;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--darkBlue);
+  color: #fff;
+  /* position: relative; */
+}
+
+#mobileScreen {
+  @media screen and (min-width: 640px) {
+    display: none;
+  }
+}
+
+#desktopScreen {
+  @media screen and (max-width: 639px) {
+    display: none;
+  }
+}
+
+.primaryBtn {
+  background-color: var(--neonGreen);
+  color: var(--darkBlue);
+  border-radius: 99rem;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.glowingBGHero::before {
+  content: "";
+  background-color: var(--red);
+  filter: blur(400px);
+  width: 800px;
+  height: 800px;
+  border-radius: 99rem;
+  position: absolute;
+  top: -20%;
+  left: -40%;
+  z-index: 5;
+}
+
+.glowingBGHero::after {
+  content: "";
+  background-color: var(--white);
+  filter: blur(400px);
+  width: 800px;
+  height: 800px;
+  border-radius: 99rem;
+  position: absolute;
+  bottom: -20%;
+  right: -40%;
+  z-index: 5;
+}
+
+.mobileGlowing::after {
+  content: "";
+  background-color: var(--white);
+  filter: blur(600px);
+  width: 600px;
+  height: 600px;
+  border-radius: 99rem;
+  position: absolute;
+  bottom: 10%;
+  right: -200%;
+  z-index: 5;
+  opacity: 0.4;
+}
+
+/* 104 + 32 + 24 + 20 + 16 */
+
+.verticalCarouselHeight {
+  height: calc(100vh - 300px);
+}
