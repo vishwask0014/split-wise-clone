@@ -71,7 +71,7 @@ const menu = [
     icon: "history",
   },
   {
-    label: "Report",
+    label: "Stats",
     slug: "/report",
     id: 4,
     icon: "report",

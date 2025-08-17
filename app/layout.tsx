@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SeperationLayout from "./Components/SeperationLayout/SeperationLayout";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,6 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="theme-color" content="#f60000"></meta>
+      </Head>
       <body className={`antialiased`}>
         <SeperationLayout>{children}</SeperationLayout>
       </body>
