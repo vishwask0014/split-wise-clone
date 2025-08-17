@@ -24,7 +24,7 @@ const Icon = ({ name, color }: IconProps) => {
               d="M17.7271 9L18.3933 12.2569C18.6247 13.3885 19.2163 14.4147 20.0796 15.1821L20.1787 15.2701C20.658 15.6961 20.7756 16.3986 20.4612 16.9575C20.099 17.6015 19.4176 18 18.6788 18H5.32088C4.58204 18 3.90065 17.6015 3.53843 16.9575C3.22404 16.3986 3.34165 15.6961 3.82094 15.2701L3.92 15.1821C4.78328 14.4147 5.3749 13.3885 5.60636 12.2569L6.59803 7.40872C7.12291 4.84266 9.38062 3 11.9998 3"
               stroke="black"
               strokeWidth="null"
-              strokeLinecap="round"
+              astrokeLinecap="round"
             ></path>
             <path
               d="M18 5C18 6.10457 17.1046 7 16 7C14.8954 7 14 6.10457 14 5C14 3.89543 14.8954 3 16 3C17.1046 3 18 3.89543 18 5Z"
@@ -33,6 +33,24 @@ const Icon = ({ name, color }: IconProps) => {
             ></path>
           </svg>
         </>
+      );
+
+    case "back":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="size-6"
+        >
+          <path
+            astrokeLinecap="round"
+            strokeLinejoin="round"
+            d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+          />
+        </svg>
       );
 
     default:
@@ -69,13 +87,13 @@ const BottomNavIcon = ({ name, color, size }: bottomnavIconProps) => {
             d="M2 9.7501L9.76211 4.51068C10.8461 3.77895 11.3882 3.41309 12 3.41309C12.6118 3.41309 13.1539 3.77895 14.2379 4.51068L22 9.7501"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
           ></path>
           <path
             d="M12 13.125L12 16.5"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
           ></path>
         </svg>
       );
@@ -129,7 +147,7 @@ const BottomNavIcon = ({ name, color, size }: bottomnavIconProps) => {
             d="M18 3V6.1427M18 3H14.6523M18 3L10.0259 10.0881C9.7251 10.3555 9.57468 10.4892 9.41321 10.5541C9.15504 10.6578 8.86532 10.6493 8.61369 10.5306C8.45631 10.4563 8.314 10.314 8.02939 10.0294C7.72925 9.72925 7.57918 9.57918 7.41454 9.50418C7.1512 9.38422 6.8488 9.38422 6.58546 9.50418C6.42082 9.57918 6.27075 9.72925 5.97061 10.0294L4 12"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
             strokeLinejoin="round"
             className={size}
           ></path>
@@ -155,7 +173,7 @@ const BottomNavIcon = ({ name, color, size }: bottomnavIconProps) => {
             d="M20 21V20.1429C20 19.0805 20 18.5493 19.8997 18.1099C19.5578 16.6119 18.3881 15.4422 16.8901 15.1003C16.4507 15 15.9195 15 14.8571 15H10C8.13623 15 7.20435 15 6.46927 15.3045C5.48915 15.7105 4.71046 16.4892 4.30448 17.4693C4 18.2044 4 19.1362 4 21"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
             className={size}
           ></path>
         </svg>
@@ -192,63 +210,63 @@ const BottomNavIcon = ({ name, color, size }: bottomnavIconProps) => {
             d="M12 3V9"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
             className={size}
           ></path>
           <path
             d="M19 12H15"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
             className={size}
           ></path>
           <path
             d="M9 20H3"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
             className={size}
           ></path>
           <path
             d="M5 12L10 12C10.9428 12 11.4142 12 11.7071 12.2929C12 12.5858 12 13.0572 12 14V19"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
             className={size}
           ></path>
           <path
             d="M21 12H20.875"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
             className={size}
           ></path>
           <path
             d="M7 16H3"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
             className={size}
           ></path>
           <path
             d="M9 16H8.875"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
             className={size}
           ></path>
           <path
             d="M3 12L3.125 12"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
             className={size}
           ></path>
           <path
             d="M12 20.875V21"
             stroke={color}
             strokeWidth="null"
-            strokeLinecap="round"
+            astrokeLinecap="round"
             className={size}
           ></path>
         </svg>

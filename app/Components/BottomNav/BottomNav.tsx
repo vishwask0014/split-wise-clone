@@ -72,7 +72,7 @@ const menu = [
   },
   {
     label: "Stats",
-    slug: "/report",
+    slug: "/stats",
     id: 4,
     icon: "report",
   },
