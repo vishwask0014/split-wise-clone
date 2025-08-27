@@ -14,21 +14,34 @@ export default function Page() {
   return (
     <div className="relative px-2 overflow-hidden mobileGlowing h-screen">
       <div className="bg-[var(--neonGreen)] px-4 py-3 rounded-b-4xl">
-        <div className="flex items-center justify-between py-3">
-          <div className="">
-            <span className="text-black text-2xl leading-0 font-regular">
-              Welcome,
-            </span>
-            <h4 className="text-black text-2xl font-black">Alexa</h4>
-          </div>
+        <div className="flex flex-col py-3 gap-6">
+          <div className="flex justify-between items-center">
+            <div className="flex items-baseline gap-1">
+              <span className="text-black text-3xl italic leading-0 font-thin">
+                Welcome
+              </span>
+              <h4 className="text-black text-3xl m-0 p-0 font-regular">
+                Alexa,
+              </h4>
+            </div>
 
-          <div className="flex gap-3 items-center">
-            <div className="w-8 h-8 rounded-full overflow-hidden relative bg-white">
+            <div className="w-10 h-10 rounded-full overflow-hidden relative bg-white">
               <Image src={"/assests/user.jpg"} alt="user-name" fill />
             </div>
+          </div>
+
+          <div className="flex gap-6 items-center justify-center">
+            <button className="border border-black rounded-full w-16 h-16 flex justify-center items-center">
+              <Icon name="QR" color={"red"} />
+            </button>
+
             {/* notification */}
-            <button className="border border-black rounded-full w-8 h-8 flex justify-center items-center">
+            <button className="border border-black rounded-full w-16 h-16 flex justify-center items-center">
               <Icon name="bell" color="red" />
+            </button>
+
+            <button className="border border-black rounded-full w-16 h-16 flex justify-center items-center">
+              <Icon name="gear" color={''}/>
             </button>
           </div>
         </div>
@@ -39,18 +52,18 @@ export default function Page() {
 
       {/* payment status */}
       <div className="mt-6 relative z-20 px-4">
-        <h2 className="text-white font-semibold text-2xl">Payment Status</h2>
+        <div className="flex justify-between items-baseline">
+          <h2 className="text-white font-semibold text-2xl">Payments</h2>
 
-        <div className="flex justify-between items-center mt-2">
-          <div className="text-sm">
-            <span className="font-semibold me-1  ">$140</span>
-            <span className="font-regular text-white/60">Total spend</span>
-          </div>
-
-          <span className="text-sm">
-            <span className="font-bold me-1">$140</span>
-            <span className="font-regular text-white/60">Total Bill</span>
-          </span>
+          {/* total spend */}
+          {/* <div className="flex justify-between items-center mt-2">
+            <div className="text-sm">
+              <span className="font-regular text-white/60 me-1">
+                Total spend
+              </span>
+              <span className="font-semibold">$140</span>
+            </div>
+          </div> */}
         </div>
 
         {/* vertical carousel of transcation status */}

@@ -65,10 +65,10 @@ const menu = [
     icon: "home",
   },
   {
-    label: "History",
-    slug: "/history",
+    label: "Split",
+    slug: "/split",
     id: 2,
-    icon: "history",
+    icon: "bill",
   },
   {
     label: "Stats",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "../app/style.css";
 import SeperationLayout from "./Components/SeperationLayout/SeperationLayout";
 import Head from "next/head";
 
