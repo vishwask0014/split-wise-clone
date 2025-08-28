@@ -48,17 +48,17 @@ export default function SplitScreenForm() {
 
                 {/* Dropdown */}
                 {isOpen && (
-                  <ul className="absolute mt-0 w-full bg-white/20 backdrop-blur-2xl rounded-b-2xl overflow-auto h-[180px] no-scroll pt-3">
+                  <ul className="absolute mt-0 w-full bg-white/90 backdrop-blur-2xl rounded-b-2xl overflow-auto h-[180px] no-scroll pt-0">
                     {categories.map((category, idx) => (
                       <li
                         key={idx}
                         onClick={() => {
-                          setSelected(category);
+                          setSelected(category.label);
                           setIsOpen(false);
                         }}
-                        className="text-black py-2 px-4 cursor-pointer"
+                        className="text-black py-3 px-4 cursor-pointer"
                       >
-                        {category}
+                        {category.label} {category.icon}
                       </li>
                     ))}
                   </ul>
@@ -109,11 +109,11 @@ export default function SplitScreenForm() {
 }
 
 const categories = [
-  "Friends",
-  "Family",
-  "Work",
-  "Travel",
-  "Health",
-  "Meetup",
-  "Meeting",
+  { label: "Friends", icon: "👥" },
+  { label: "Family", icon: "🏠" },
+  { label: "Work", icon: "💼" },
+  { label: "Travel", icon: "✈️" },
+  { label: "Health", icon: "❤️" },
+  { label: "Meetup", icon: "📅" },
+  { label: "Meeting", icon: "🤝" },
 ];

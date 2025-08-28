@@ -25,8 +25,14 @@ export default function Page() {
               </h4>
             </div>
 
-            <div className="w-10 h-10 rounded-full overflow-hidden relative bg-white">
-              <Image src={"/assests/user.jpg"} alt="user-name" fill />
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full overflow-hidden relative bg-white">
+                <Image src={"/assests/user.jpg"} alt="user-name" fill />
+              </div>
+
+              <button className="w-10 h-10 cursor-pointer">
+                <Icon name="gear" color={""} />
+              </button>
             </div>
           </div>
 
@@ -111,7 +117,7 @@ export default function Page() {
 
                     <h6
                       className={`me-4 font-bold text-xl ${
-                        i.status === "Paid" ? `text-green-600` : "text-red-600"
+                        i.status === "Paid" ? `text-green-500` : "text-red-600"
                       }`}
                     >
                       ${i.amount}

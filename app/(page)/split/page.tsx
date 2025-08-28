@@ -18,7 +18,7 @@ export default function page() {
 
         <div className="bg-neonGreen px-6 pt-8 pb-2 rounded-b-[50px]">
           {/* AI scan */}
-          <button className="border border-black mx-auto rounded-full w-16 h-16 flex justify-center items-center">
+          <button className="border cursor-pointer border-black mx-auto rounded-full w-16 h-16 flex justify-center items-center">
             <Icon name="aiScan" color={""} />
           </button>
 
