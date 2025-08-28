@@ -35,13 +35,14 @@ export default function Page() {
               <Icon name="QR" color={"red"} />
             </button>
 
+            {/* AI scan */}
+            <button className="border border-black rounded-full w-16 h-16 flex justify-center items-center">
+              <Icon name="aiScan" color={""} />
+            </button>
+
             {/* notification */}
             <button className="border border-black rounded-full w-16 h-16 flex justify-center items-center">
               <Icon name="bell" color="red" />
-            </button>
-
-            <button className="border border-black rounded-full w-16 h-16 flex justify-center items-center">
-              <Icon name="gear" color={''}/>
             </button>
           </div>
         </div>
