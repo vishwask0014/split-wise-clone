@@ -6,6 +6,7 @@ import { Icon } from "./Components/Icons/Icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Mousewheel } from "swiper/modules";
+import Link from "next/link";
 
 {
   /* home page is this */
@@ -30,9 +31,9 @@ export default function Page() {
                 <Image src={"/assests/user.jpg"} alt="user-name" fill />
               </div>
 
-              <button className="w-10 h-10 cursor-pointer">
+              <Link href='/setting' className="w-10 h-10 cursor-pointer">
                 <Icon name="gear" color={""} />
-              </button>
+              </Link>
             </div>
           </div>
 
